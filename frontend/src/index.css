@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --wb-blue: #0c2d67;
+  --wb-blue-deep: #071a3b;
+  --wb-cream: #f4f8ff;
+  --wb-white: #ffffff;
+  --wb-gold: #f6c453;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior: none
+}
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hind Siliguri', 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(246, 196, 83, 0.22), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(12, 45, 103, 0.15), transparent 50%),
+    linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.page-enter {
+  animation: page-enter 450ms ease-out;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
